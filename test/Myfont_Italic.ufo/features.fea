@@ -1,0 +1,49 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+
+# GPOS 
+
+
+lookup kernHorizontalKerninginLatinlookup0 {
+  lookupflag 0;
+    pos \A \A 42;
+} kernHorizontalKerninginLatinlookup0;
+
+lookup markMarkPositioninginLatinlookup1 {
+  lookupflag 0;
+  markClass [\acutecomb ] <anchor -28 585> @top;
+  pos base [\A ] <anchor 482 751> mark @top;
+} markMarkPositioninginLatinlookup1;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninginLatinlookup0;
+
+ script latn;
+     language dflt ;
+      lookup kernHorizontalKerninginLatinlookup0;
+} kern;
+
+feature mark {
+
+ script DFLT;
+     language dflt ;
+      lookup markMarkPositioninginLatinlookup1;
+
+ script latn;
+     language dflt ;
+      lookup markMarkPositioninginLatinlookup1;
+} mark;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\A ];
+@GDEF_Mark = [\acutecomb ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+

@@ -1,0 +1,31 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+# Variable features.fea generated from designspace masters
+
+@GDEF_Simple = [\A];
+@GDEF_Mark = [\acutecomb];
+
+feature kern {
+    pos \A \A (weight=400.0,italic=1.0:42 weight=400.0,italic=0.0:40 weight=700.0,italic=0.0:44);
+} kern;
+
+lookup markMarkPositioninginLatinlookup1 {
+  lookupflag 0;
+  markClass [\\acutecomb ] <anchor weight=400.0,italic=1.0:-28 weight=400.0,italic=0.0:0 weight=700.0,italic=0.0:0 weight=400.0,italic=1.0:585 weight=400.0,italic=0.0:589 weight=700.0,italic=0.0:589> @top;
+  pos base [\\A ] <anchor weight=400.0,italic=1.0:482 weight=400.0,italic=0.0:274 weight=700.0,italic=0.0:298 weight=400.0,italic=1.0:751 weight=400.0,italic=0.0:755 weight=700.0,italic=0.0:755> mark @top;
+} markMarkPositioninginLatinlookup1;
+
+feature mark {
+    script DFLT;
+    language dflt ;
+    lookup markMarkPositioninginLatinlookup1;
+    script latn;
+    language dflt ;
+    lookup markMarkPositioninginLatinlookup1;
+} mark;
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;

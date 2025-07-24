@@ -35,7 +35,7 @@ The script generates the variable font positioning syntax you requested:
 ### Usage
 #### Command Line
 ```
-python combine_features.py MyFont.designspace variable_features.fea
+python3 combine_features.py MyFont.designspace variable_features.fea
 ```
 #### Programmatic Usage
 python
@@ -46,7 +46,12 @@ combiner = VariableFeatureCombiner("path/to/font.designspace")
 combiner.save_combined_features("output/variable_features.fea")
 ```
 ### Installation Requirements
-Install the required fontTools components:
+* Create a python virtual environmet and activate it
+```
+python3 -m venv venv
+./venv/bin/activate
+```
+* Install the required fontTools components:
 
 ```
 pip install fonttools[ufo]
