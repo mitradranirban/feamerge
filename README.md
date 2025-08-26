@@ -33,6 +33,17 @@ The script generates the variable font positioning syntax you requested:
 * Feature Preservation: Maintains other OpenType features beyond kerning
 
 ### Usage
+### Installation Requirements
+* Create a python virtual environmet and activate it
+```
+python3 -m venv venv
+./venv/bin/activate
+```
+* Install the required fontTools components:
+
+```
+pip install fonttools[ufo]
+```
 #### Command Line
 ```
 python3 combine_features.py MyFont.designspace variable_features.fea
@@ -45,17 +56,7 @@ from combine_features import VariableFeatureCombiner
 combiner = VariableFeatureCombiner("path/to/font.designspace")
 combiner.save_combined_features("output/variable_features.fea")
 ```
-### Installation Requirements
-* Create a python virtual environmet and activate it
-```
-python3 -m venv venv
-./venv/bin/activate
-```
-* Install the required fontTools components:
 
-```
-pip install fonttools[ufo]
-```
 This script provides a solid foundation for combining UFO feature files into variable font syntax. You may need to extend the parsing logic for more complex feature definitions or specific kerning patterns in your font sources. The feaLib module can also be used for more sophisticated feature file manipulation if needed.[3]
 
 #### References
