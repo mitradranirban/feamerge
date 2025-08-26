@@ -12,7 +12,7 @@ lookup kernHorizontalKerninginLatinlookup0 {
 
 lookup markMarkPositioninginLatinlookup1 {
   lookupflag 0;
-  markClass [\acutecomb ] <anchor -28 585> @top;
+  markClass [\acutecomb ] <anchor   > @top;
   pos base [\A ] <anchor 482 751> mark @top;
 } markMarkPositioninginLatinlookup1;
 
