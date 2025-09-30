@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fontra-feamerge"
+description = "A Fontra plugin for merging multiple Adobe feature files into a single variable feature file"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+authors = [{name = "Anirban Mitra", email = "anirban@maksharsoftware.in"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+dependencies = [
+    "fontra>=0.3.0",
+]
+
+[tool.setuptools_scm]
+write_to = "src/fontra_feamerge/_version.py"
+
+[project.entry-points."fontra.plugins"]
+feamerge = "fontra_feamerge.plugin:FeaMergePlugin"
