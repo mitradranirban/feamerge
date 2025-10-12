@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feamerge"
+version = "0.1.0"
+description = "Python script to merge Adobe feature files into a single variable feature file"
+authors = [
+    { name = "mitradranirban" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["font", "variable font", "feature file", "fonts", "OpenType"]
+requires-python = ">=3.8"
+dependencies = [
+    "fonttools[ufo]>=4.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mitradranirban/feamerge"
+"Repository" = "https://github.com/mitradranirban/feamerge"
+
