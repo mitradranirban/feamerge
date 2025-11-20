@@ -1,6 +1,8 @@
 
 # feamerge
 
+[![PyPI version](https://img.shields.io/pypi/v/feamerge.svg)](https://pypi.org/project/feamerge/)
+
 ## Python scripts to merge all feature fea file in a designspace in common variable feature.fea file
 
 This is an attempt to vibe code a solution to problem that fontc can not compile designspace with varying Opettype features.
