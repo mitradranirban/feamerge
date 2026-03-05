@@ -1,3 +1,17 @@
-*.ttf
-venv
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Build and Distribution
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+
+# Local configuration/OS files
+.DS_Store
+.idea/
+.vscode/
 

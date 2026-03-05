@@ -1,0 +1,1 @@
+fonttools[ufo]>=4.0.0

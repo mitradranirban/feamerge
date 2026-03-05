@@ -1,3 +1,16 @@
+Metadata-Version: 2.4
+Name: feamerge
+Version: 0.1.1
+Summary: Python script to merge Adobe feature files into a single variable feature file
+Author: mitradranirban
+Project-URL: Homepage, https://github.com/mitradranirban/feamerge
+Project-URL: Repository, https://github.com/mitradranirban/feamerge
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: fonttools[ufo]>=4.0.0
+Dynamic: license-file
+
 # feamerge
 ## Merge Adobe feature files into a single variable feature file
 `feamerge` is a tool designed to solve the challenge of compiling designspace files with varying OpenType features. It automates the preprocessing of UFO feature files—expanding kerning and positioning groups—before merging them into a valid variable font feature file.
