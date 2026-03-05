@@ -38,7 +38,7 @@ combiner = VariableFeatureCombiner("path/to/font.designspace")
 combiner.save_combined_features("output/variable_features.fea")
 ```
 ### 📜 Changelog
-**v0.1.1**
+**v0.1.2**
 
 Package Restructuring: Moved all scripts into the feamerge/ package directory for proper bundling.
 

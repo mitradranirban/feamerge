@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "feamerge"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python script to merge Adobe feature files into a single variable feature file"
 authors = [{ name = "mitradranirban" }]
 license = { file = "LICENSE" }
