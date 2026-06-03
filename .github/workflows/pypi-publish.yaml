@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/feamerge
     permissions:
       id-token: write  # Mandatory for Trusted Publishing
       contents: read
@@ -15,6 +18,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fixes the setuptools fallback-to-0.1.0 version bug
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,5 +33,6 @@ jobs:
         run: python -m build
 
       - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish@v1.12.4 # Updated to latest stable
-        # No 'with: password' needed here if Trusted Publishing is set up!
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          verbose: true  # Highly recommended so you see exact errors if PyPI rejects a version
