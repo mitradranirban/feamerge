@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: feamerge
-Version: 0.1.1
+Version: 0.1.2
 Summary: Python script to merge Adobe feature files into a single variable feature file
 Author: mitradranirban
 Project-URL: Homepage, https://github.com/mitradranirban/feamerge
@@ -51,7 +51,7 @@ combiner = VariableFeatureCombiner("path/to/font.designspace")
 combiner.save_combined_features("output/variable_features.fea")
 ```
 ### 📜 Changelog
-**v0.1.1**
+**v0.1.2**
 
 Package Restructuring: Moved all scripts into the feamerge/ package directory for proper bundling.
 

@@ -7,11 +7,12 @@ name = "feamerge"
 version = "0.1.2"
 description = "Python script to merge Adobe feature files into a single variable feature file"
 authors = [{ name = "mitradranirban" }]
-license = { file = "LICENSE" }
+license = { file = "LICENSE.txt" }
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "fonttools[ufo]>=4.0.0"
+    "fonttools[ufo]>=4.0.0",
+    "ufoLib2"
 ]
 
 [tool.setuptools]

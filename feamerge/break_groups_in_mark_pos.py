@@ -8,7 +8,7 @@ def parse_groups(fea_text):
     @GroupName = [glyph1 glyph2 glyph3];
     Returns a dict: {groupname: [glyphnames]}
     """
-    group_pattern = re.compile(r'@(\w+)\s*=\s*\[([^\]]+)\];')
+    group_pattern = re.compile(r'@([A-Za-z0-9_.]+)\s*=\s*\[([^\]]+)\];')
     groups = {}
     for match in group_pattern.finditer(fea_text):
         group_name = match.group(1)
