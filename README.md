@@ -38,6 +38,15 @@ combiner = VariableFeatureCombiner("path/to/font.designspace")
 combiner.save_combined_features("output/variable_features.fea")
 ```
 ### 📜 Changelog
+**v0.1.3**
+
+Bug Fixes & Pipeline Enhancements:
+- Added `ufoLib2` to packaging dependencies.
+- Corrected package license configuration file reference.
+- Fixed CLI to preprocess all masters and properly chain sequential expansion steps.
+- Implemented fallback to retrieve anchor coordinates from UFO glyph data for empty feature anchor definitions.
+- Renamed and restructured combiner module to `combine_features`.
+
 **v0.1.2**
 
 Package Restructuring: Moved all scripts into the feamerge/ package directory for proper bundling.
